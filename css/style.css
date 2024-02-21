@@ -1,0 +1,54 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Evita el desplazamiento */
+    height: 100%;
+    background-color: #d794da; /* Un color de fondo suave */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #game {
+    position: relative;
+    width: 80vw; /* Usa un porcentaje del ancho de la ventana para el juego */
+    height: 90vh; /* Y un porcentaje del alto para la altura */
+    background-color: #fff; /* Fondo blanco para el área del juego */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Sombra suave para darle profundidad */
+    overflow: hidden; /* Asegura que todo lo que se salga del área del juego no se muestre */
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  
+  #basket, .heart, .brokenHeart {
+    position: absolute;
+  }
+  
+  #basket {
+    width: 80px; /* Tamaño de la cesta */
+    height: 80px; /* Asegúrate de que tus imágenes encajen bien con estos tamaños */
+    bottom: 20px; /* Espaciado desde el fondo */
+  }
+  
+  .heart img, .brokenHeart img {
+    width: 50px; /* Tamaño de los corazones */
+    height: auto; /* Mantiene la proporción de la imagen */
+  }
+  
+  #score {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 24px; /* Tamaño de la fuente para el marcador */
+    color: #000; /* Color del texto */
+    display: flex;
+    align-items: center;
+  }
+  
+  #score img {
+    margin-right: 10px; /* Espacio entre la imagen y el texto del puntaje */
+    width: 30px; /* Tamaño de la imagen del corazón del puntaje */
+    height: auto;
+  }
+  
